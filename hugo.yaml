@@ -1,0 +1,28 @@
+baseURL: https://opval.com/
+languageCode: fr-ca
+theme: risotto
+title: Frédéric Lebel @ opval.com
+
+menus:
+  main:
+    - identifier: Articles
+      name: Articles
+      url: /articles
+      weight: 5
+
+params:
+  theme:
+    palette: material
+  socialLinks:
+    - icon: "fa-brands fa-github"
+      title: "GitHub"
+      url: "https://github.com/frleb"
+    - icon: "fa-brands fa-linkedin"
+      title: "LinkedIn"
+      url: "https://www.linkedin.com/in/lebelf/"
+    - icon: "fa-solid fa-rss"
+      title: "Flux RSS"
+      url: "/index.xml"
+    - icon: "fa-solid fa-envelope"
+      title: "Courriel"
+      url: "mailto:flebel@opval.com"
