@@ -77,4 +77,5 @@ Tous les billets de blog seront rédigés en format ADR.
 
 ## Notes / Liens
 - Concept ADR : [docs/adr-concept.md](../docs/adr-concept.md)
+- Concept ADR : [Concept ADR]({{< ref "adr-concept.md" >}})
 - Guide pratique : [docs/adr-guide.md](../docs/adr-guide.md)

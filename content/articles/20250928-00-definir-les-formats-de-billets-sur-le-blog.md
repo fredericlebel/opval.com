@@ -46,7 +46,10 @@ J'essayerai de rédiger **la majorité des décisions importantes en ADR**, tand
   - Les lecteurs doivent s’adapter à plusieurs formats.
   - Gestion légèrement plus complexe du blog (différents layouts, CSS, etc.).
 
-## Notes / Liens
+## Références
 
-- Concept ADR : [Concept ADR](./adr-concept.md)
-- Guide pratique : [Guide ADR](./adr-guide.md)
+- **Concept ADR** - interne
+  [Concept ADR]({{< ref "adr-concept.md" >}})
+
+- **Guide ADR** - interne
+  [Guide ADR]({{< ref "adr-guide.md" >}})
