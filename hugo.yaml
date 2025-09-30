@@ -5,10 +5,18 @@ title: Frédéric Lebel @ opval.com
 
 menus:
   main:
-    - identifier: Articles
+    - identifier: articles
       name: Articles
       url: /articles
       weight: 5
+    - identifier: tags
+      name: Tags
+      url: /tags
+      weight: 10
+    - identifier: categories
+      name: Catégories
+      url: /categories
+      weight: 15
 
 params:
   theme:
