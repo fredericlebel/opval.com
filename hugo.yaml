@@ -20,7 +20,10 @@ menus:
 
 params:
   about:
-    description: "Passionné de technologies, de programmation. Ici, je partage mes idées, mes projets et mes découvertes pour inspirer et apprendre ensemble."
+    description: |
+      Technologies, programmation et projets personnels.
+
+      Curiosité et apprentissage au quotidien.
     title: "Frédéric Lebel"
   theme:
     palette: material
