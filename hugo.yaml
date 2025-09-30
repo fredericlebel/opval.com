@@ -2,6 +2,7 @@ baseURL: https://opval.com/
 languageCode: fr-ca
 theme: risotto
 title: "Frédéric Lebel @ opval.com : ~"
+copyright: "© Frédéric Lebel"
 
 menus:
   main:
