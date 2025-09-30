@@ -19,6 +19,9 @@ menus:
       weight: 15
 
 params:
+  about:
+    description: "Passionné de technologies, de programmation. Ici, je partage mes idées, mes projets et mes découvertes pour inspirer et apprendre ensemble."
+    title: "Frédéric Lebel"
   theme:
     palette: material
   socialLinks:
