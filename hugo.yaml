@@ -37,7 +37,7 @@ params:
       url: "https://www.linkedin.com/in/lebelf/"
     - icon: "fa-solid fa-rss"
       title: "Flux RSS"
-      url: "/index.xml"
+      url: "index.xml"
     - icon: "fa-solid fa-envelope"
       title: "Courriel"
       url: "mailto:flebel@opval.com"
