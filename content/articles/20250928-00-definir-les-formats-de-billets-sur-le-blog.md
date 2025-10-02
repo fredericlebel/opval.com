@@ -1,10 +1,9 @@
 ---
-categories: ["Concept"]
+categories: ["ADR"]
 date: "2025-09-26T08:54:26Z"
 draft: false
 title: 'ADR 20250928-00 Définir les formats de billets sur le blog'
 tags: ["ADR", "Blog", "Format", "Concept", "Guide pratique"]
-categories: ["ADR"]
 ---
 
 ## Statut
