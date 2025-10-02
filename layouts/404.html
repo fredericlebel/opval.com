@@ -1,0 +1,15 @@
+{{ define "main" }}
+<h1>Cette page n'a pas répondu au ping.</h1>
+
+<p>OUPS! L'adresse demandée ne donne pas signe de vie.</p>
+<p>Peut-être qu'elle est derrière un pare-feu trop strict… ou qu'elle a fait un <code>shutdown -h now</code>.</p>
+
+<ul>
+  <li><a href="{{ "" | relURL }}">Revenir à l'index</a> (le DNS fonctionne encore !)</li>
+  <li><a href="https://www.githubstatus.com/" target="_blank" rel="noopener">Vérifier l'état de GitHub</a> (sa haute dispo est sous monitoring)</li>
+  <li>
+    <a href="mailto:flebel@opval.com?subject=Ticket%20404&body=Bonjour%2C%0A%0AJ'ai rencontré une erreur 404 sur la page suivante : [indiquer l'URL]%0A%0AMerci de votre aide pour la résoudre.%0A%0ACordialement%2C%0A%5BVotre%20nom%5D">Ouvrir un ticket</a> (si tu veux la ressusciter)
+  </li>
+</ul>
+
+{{ end }}
