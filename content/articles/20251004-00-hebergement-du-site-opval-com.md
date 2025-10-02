@@ -1,8 +1,7 @@
 ---
 categories: ["ADR"]
 # date: "2025-10-04"
-date: "2025-09-27T08:54:26Z"
-
+date: "2025-10-04"
 draft: false
 title: 'ADR 20251004-00 Hébergement du site opval.com'
 tags: ["ADR", "Blog"]
