@@ -3,17 +3,23 @@ on:
   push:
     branches:
       - main
+  schedule:
+    - cron: '0 * * * *'  # toutes les heures à la minute 0
   workflow_dispatch:
+
 permissions:
   contents: read
   pages: write
   id-token: write
+
 concurrency:
   group: pages
   cancel-in-progress: false
+
 defaults:
   run:
     shell: bash
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -22,7 +28,7 @@ jobs:
       GO_VERSION: 1.25.1
       HUGO_VERSION: 0.150.0
       NODE_VERSION: 22.18.0
-      TZ: Europe/Oslo
+      TZ: "America/Montreal"
     steps:
       - name: Checkout
         uses: actions/checkout@v5
