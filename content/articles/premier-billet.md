@@ -12,7 +12,7 @@ L'idée derrière ce projet est de créer un espace où je pourrai partager mes 
 
 Pour l'instant, ce blog est en construction, et je prends le temps de poser les bases avant de plonger dans des sujets plus spécifiques. Si vous lisez ceci, merci de faire partie des premiers visiteurs ! 😊
 
-N'hésitez pas à revenir bientôt, car d'autres articles sont en préparation. Je suis également ouvert aux suggestions et aux discussions, alors laissez un commentaire ou contactez-moi via [LinkedIn](https://linkedin.com/in/lebelf/) ou [GitHub](https://github.com/frleb/).
+N'hésitez pas à revenir bientôt, car d'autres articles sont en préparation. Je suis également ouvert aux suggestions et aux discussions, alors laissez un commentaire ou contactez-moi via [LinkedIn](https://linkedin.com/in/lebelf/) ou [GitHub](https://github.com/fredericlebel/).
 
 À très bientôt pour la suite !
 
