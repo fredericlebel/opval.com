@@ -2,6 +2,7 @@
 categories: ["Concept"]
 date: "2025-09-26T08:54:26Z"
 draft: false
+summary: "Un ADR (Architecture Decision Record) est un document léger qui capture les décisions importantes d’un projet, facilitant la traçabilité, la compréhension et l’intégration de nouveaux membres."
 title: 'Concept : Qu''est-ce qu''un ADR ?'
 ---
 
