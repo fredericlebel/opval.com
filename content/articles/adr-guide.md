@@ -2,6 +2,7 @@
 categories: ["Guide pratique"]
 date: '2025-09-26T08:54:26Z'
 draft: false
+summary: "Ce guide pratique explique étape par étape comment rédiger un ADR, avec des bonnes pratiques, des pièges à éviter et un exemple concret pour rendre les décisions claires, traçables et faciles à partager."
 title: 'Guide pratique : Comment rédiger un ADR'
 ---
 
