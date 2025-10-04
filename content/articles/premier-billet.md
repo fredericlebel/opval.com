@@ -1,6 +1,7 @@
 ---
 date: '2025-01-14T01:54:26Z'
 draft: false
+summary: "Bienvenue sur mon blog ! Découvrez un espace pour partager réflexions, expériences et apprentissages autour de la technologie, de l’automatisation et de la gestion."
 title: 'Premier Billet'
 ---
 # Bienvenue sur mon blog !
