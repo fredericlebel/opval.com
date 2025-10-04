@@ -2,6 +2,7 @@
 categories: ["ADR"]
 date: "2025-09-26T08:54:26Z"
 draft: false
+summary: "Ce billet définit les formats officiels du blog technique : Concepts, Guides pratiques et ADR, pour combiner lecture agréable, partage des connaissances et traçabilité des décisions importantes."
 title: 'ADR 20250928-00 Définir les formats de billets sur le blog'
 tags: ["ADR", "Blog", "Format", "Concept", "Guide pratique"]
 ---
