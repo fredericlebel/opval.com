@@ -1,8 +1,8 @@
 ---
 categories: ["ADR"]
-# date: "2025-10-04"
 date: "2025-10-04"
 draft: false
+summary: "Ce billet explique le choix d’hébergement du blog opval.com : GitHub Pages pour une publication rapide, un accès mondial via CDN, et une maintenance minimale, comparé à une option interne sur k3s."
 title: 'ADR 20251004-00 Hébergement du site opval.com'
 tags: ["ADR", "Blog"]
 ---
