@@ -4,6 +4,7 @@
     <header class="content__header">
         <h1>{{ .Title | markdownify }}</h1>
         <p class="post__meta">
+            <span class="fas fa-calendar-day"></span>
             <span class="date">{{ .Date.Format "2 January 2006" }}</span>
             {{ with .Params.tags }}
             <span class="post__tags">Mots-clés:
