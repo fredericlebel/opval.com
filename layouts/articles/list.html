@@ -1,21 +1,33 @@
 {{ define "main" }}
-    <header class="content__header">
-        <h1>{{ .Title | markdownify }}</h1>
-        {{ .Content }}
+<header class="content__header">
+    <h1>{{ .Title | markdownify }}</h1>
+    {{ .Content }}
+</header>
+
+{{ $paginator := .Paginate (where .Pages "Type" "articles") }}
+{{ range $paginator.Pages }}
+<article class="post">
+    <header class="post__header">
+        <h2><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h2>
+        <p class="post__meta">
+            <span class="fas fa-calendar-day"></span>
+            <span class="date">{{ .Date.Format "2 January 2006" }}</span>
+        </p>
     </header>
 
-    {{ range .Pages }}
-    <article class="post">
-        <header class="post__header">
-            <h2><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h2>
-            <p class="post__meta">
-                <span class="date">{{ .Date.Format "2 January 2006" }}</span>
-            </p>
-        </header>
+    <section class="post__summary">
+        {{ .Summary }}
+    </section>
+</article>
+{{ end }}
 
-        <section class="post__summary">
-            {{ .Summary }}
-        </section>
-    </article>
+<nav class="pagination">
+    {{ if $paginator.HasPrev }}
+    <a href="{{ $paginator.Prev.URL }}">← Précédent</a>
     {{ end }}
+    {{ if $paginator.HasNext }}
+    <a href="{{ $paginator.Next.URL }}">Suivant →</a>
+    {{ end }}
+</nav>
+
 {{ end }}
