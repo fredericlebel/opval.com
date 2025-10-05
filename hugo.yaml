@@ -4,6 +4,12 @@ theme: risotto
 title: "Frédéric Lebel @ opval.com : ~"
 copyright: "© Frédéric Lebel"
 
+# Pagination settings
+pagination:
+  pagerSize: 5
+  path: "page"
+disableAliases: true # No alias for the first page
+
 menus:
   main:
     - identifier: articles
