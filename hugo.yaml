@@ -1,5 +1,6 @@
 baseURL: "https://opval.com/"
-languageCode: fr-ca
+defaultContentLanguage: fr
+languageCode: fr
 theme: risotto
 title: "Frédéric Lebel @ opval.com : ~"
 copyright: "© Frédéric Lebel"
@@ -42,7 +43,7 @@ params:
       url: "https://www.linkedin.com/in/lebelf/"
     - icon: "fa-solid fa-rss"
       title: "Flux RSS"
-      url: "index.xml"
+      url: "/index.xml"
     - icon: "fa-solid fa-envelope"
       title: "Courriel"
       url: "mailto:flebel@opval.com"
