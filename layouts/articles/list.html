@@ -10,8 +10,8 @@
     <header class="post__header">
         <h2><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h2>
         <p class="post__meta">
-            <span class="fas fa-calendar-day"></span>
-            <span class="date">{{ .Date.Format "2 January 2006" }}</span>
+            <i class="fa fa-calendar-day"></i>
+            <span class="date">{{ time.Format ":date_long" .Date }}</span>
         </p>
     </header>
 
