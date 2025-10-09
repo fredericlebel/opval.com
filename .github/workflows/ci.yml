@@ -104,9 +104,10 @@ jobs:
           path: ${{ runner.temp }}/hugo_cache
           key: ${{ steps.cache-restore.outputs.cache-primary-key }}
 
-      - name: Upload site for Pages
-        uses: actions/upload-pages-artifact@v3
+      - name: Upload site artifact
+        uses: actions/upload-artifact@v4
         with:
+          name: site
           path: ./public
 
   check-links:
@@ -118,7 +119,7 @@ jobs:
 
       - uses: actions/download-artifact@v4
         with:
-          name: github-pages
+          name: site
           path: public/
 
       - name: Inspect repository root
@@ -161,7 +162,7 @@ jobs:
     steps:
       - uses: actions/download-artifact@v4
         with:
-          name: github-pages
+          name: site
           path: public/
       - name: Inspect public folder before deploy
         run: |
