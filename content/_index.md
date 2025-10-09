@@ -24,4 +24,4 @@ Ce blog est une plateforme où je partage mes réflexions sur la technologie, la
 📫 **Retrouvez-moi sur** :
 
 - [LinkedIn](https://linkedin.com/in/lebelf)
-- [GitHub](https://github.com/frleb/)
+- [GitHub](https://github.com/fredericlebel/)
