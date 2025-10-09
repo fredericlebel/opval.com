@@ -158,6 +158,16 @@ jobs:
         with:
           name: github-pages
           path: public/
+      - name: Inspect public folder before deploy
+        run: |
+          echo "Checking for symlinks in public/"
+          find ./public -type l
+          echo "Checking for hardlinks (inode count)"
+          find ./public -type f -links +1
+          echo "Size of public folder:"
+          du -sh ./public
+          echo "List of top 20 largest files:"
+          find ./public -type f -exec du -h {} + | sort -rh | head -20
 
       - name: Deploy to GitHub Pages
         id: deployment
