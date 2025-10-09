@@ -143,7 +143,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          args: --base . --verbose --no-progress './**/*.md' './**/*.html' './**/*.rst' --config lychee.toml
+          args: --base https://opval.com --verbose --no-progress './public/**/*.html' --config lychee.toml
+          #args: --base . --verbose --no-progress './**/*.md' './**/*.html' './**/*.rst' --config lychee.toml
           fail: true
 
   deploy:
