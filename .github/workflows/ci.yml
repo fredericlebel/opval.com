@@ -107,7 +107,7 @@ jobs:
       - name: Upload build artifact
         uses: actions/upload-artifact@v4
         with:
-          name: site
+          name: github-pages
           path: ./public
 
   check-links:
@@ -119,7 +119,7 @@ jobs:
 
       - uses: actions/download-artifact@v4
         with:
-          name: site
+          name: github-pages
           path: public/
 
       - name: Inspect repository root
@@ -144,7 +144,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           args: --base https://opval.com --verbose --no-progress './public/**/*.html' --config lychee.toml
-          #args: --base . --verbose --no-progress './**/*.md' './**/*.html' './**/*.rst' --config lychee.toml
           fail: true
 
   deploy:
@@ -157,7 +156,7 @@ jobs:
     steps:
       - uses: actions/download-artifact@v4
         with:
-          name: site
+          name: github-pages
           path: public/
 
       - name: Deploy to GitHub Pages
