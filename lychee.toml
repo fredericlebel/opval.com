@@ -1,9 +1,0 @@
-accept = [
-    200,
-    999, # LinkedIn
-]
-
-exclude = [
-    '^https://(www\.)?linkedin\.com',                 # optional subdomains
-    #'^https://(.*\.)?github(usercontent)?\.(com|io)', # exclude common GitHub URLs
-]

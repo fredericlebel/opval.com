@@ -14,4 +14,10 @@ repos:
     rev: lychee-v0.20.1
     hooks:
       - id: lychee
-        args: ["--no-progress", "--exclude", "file://"]
+        args:
+          - "--no-progress"
+          - "--exclude"
+          - "file://"
+          - "--exclude"
+          - "http://localhost"
+        files: \.md$
