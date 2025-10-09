@@ -1,6 +1,0 @@
-accept:
-  - 200
-  - 999
-
-exclude:
-  - '^https://(www\.)?linkedin\.com'

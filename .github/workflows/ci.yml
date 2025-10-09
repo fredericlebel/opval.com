@@ -131,7 +131,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          args: --base . --verbose --no-progress './**/*.md' './**/*.html' './**/*.rst' --config lychee.yaml
+          args: --base . --verbose --no-progress './**/*.md' './**/*.html' './**/*.rst' --config lychee.toml
           fail: true
 
   deploy:
