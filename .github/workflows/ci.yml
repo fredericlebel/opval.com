@@ -122,6 +122,15 @@ jobs:
           name: site
           path: public/
 
+      - name: Inspect repository root
+        run: |
+          echo "Current directory:"
+          pwd
+          echo "Contents of current directory:"
+          ls -alh
+          echo "Contents of .github directory (if exists):"
+          ls -alh .github || true
+
       - name: Restore lychee cache
         uses: actions/cache@v3
         with:
@@ -134,7 +143,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          args: --base . --verbose --no-progress './**/*.md' './**/*.html' './**/*.rst' --config .github/config/lychee.toml
+          args: --base . --verbose --no-progress './**/*.md' './**/*.html' './**/*.rst' --config lychee.toml
           fail: true
 
   deploy:

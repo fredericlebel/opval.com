@@ -1,0 +1,12 @@
+accept = [200, 999]
+
+exclude = [
+  '^https://(www\.)?linkedin\.com',
+]
+
+cache = true
+cache_path = ".lycheecache"
+
+offline = false
+
+max_concurrency = 20
