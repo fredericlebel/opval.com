@@ -164,6 +164,7 @@ jobs:
         with:
           name: site
           path: public/
+
       - name: Inspect public folder before deploy
         run: |
           echo "Checking for symlinks in public/"
@@ -174,6 +175,14 @@ jobs:
           du -sh ./public
           echo "List of top 20 largest files:"
           find ./public -type f -exec du -h {} + | sort -rh | head -20
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: public/
 
       - name: Deploy to GitHub Pages
         id: deployment
