@@ -130,6 +130,12 @@ jobs:
           echo "Contents of .github directory (if exists):"
           ls -alh .github || true
 
+      - name: Inspect public after artifact download
+        run: |
+          echo "Current directory: $(pwd)"
+          echo "Contents of public/"
+          ls -alh public/
+
       - name: Restore lychee cache
         uses: actions/cache@v3
         with:
