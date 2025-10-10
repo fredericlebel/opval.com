@@ -12,6 +12,14 @@
         <p class="post__meta">
             <i class="fa fa-calendar-day"></i>
             <span class="date">{{ time.Format ":date_long" .Date }}</span>
+            {{ with .Params.tags }}
+            <span class="post__tags">Mots-clés:
+                {{ $last := sub (len .) 1 }}
+                {{ range $index, $tag := . }}
+                    <a href="/tags/{{ $tag | urlize }}">{{ $tag }}</a>{{ if lt $index $last }}, {{ end }}
+                {{ end }}
+            </span>
+            {{ end }}
         </p>
     </header>
 
